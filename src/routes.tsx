@@ -4,6 +4,7 @@ import MyLayout from './views/layout/MyLayout'
 import Page1 from "./views/page1/Page1";
 import Page2 from "./views/page2/Page2";
 import Login from "./views/login/Login";
+import Article from "./views/article/Article";
 
 const routes = [
   {
@@ -15,6 +16,11 @@ const routes = [
         path: '/index/page1',
         name: 'page1',
         component: Page1
+      },
+      {
+        path: '/index/article:id',
+        name: '文章详情内容',
+        component: Article
       },
       {
         path: '/index/page2',
