@@ -1550,6 +1550,14 @@
   resolved "http://r.tnpm.oa.com/@types/history/download/@types/history-4.7.6.tgz#ed8fc802c45b8e8f54419c2d054e55c9ea344356"
   integrity sha1-7Y/IAsRbjo9UQZwtBU5Vyeo0Q1Y=
 
+"@types/hoist-non-react-statics@^3.3.0":
+  version "3.3.1"
+  resolved "http://r.tnpm.oa.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -1619,6 +1627,16 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-redux@^7.1.9":
+  version "7.1.9"
+  resolved "http://r.tnpm.oa.com/@types/react-redux/download/@types/react-redux-7.1.9.tgz#280c13565c9f13ceb727ec21e767abe0e9b4aec3"
+  integrity sha1-KAwTVlyfE863J+wh52er4Om0rsM=
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+    redux "^4.0.0"
+
 "@types/react-router-dom@^5.1.5":
   version "5.1.5"
   resolved "http://r.tnpm.oa.com/@types/react-router-dom/download/@types/react-router-dom-5.1.5.tgz#7c334a2ea785dbad2b2dcdd83d2cf3d9973da090"
@@ -1643,6 +1661,13 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/redux-thunk@^2.1.0":
+  version "2.1.0"
+  resolved "http://r.tnpm.oa.com/@types/redux-thunk/download/@types/redux-thunk-2.1.0.tgz#bc2b6e972961831afb82a9bf4f06726e351f9416"
+  integrity sha1-vCtulylhgxr7gqm/TwZybjUflBY=
+  dependencies:
+    redux-thunk "*"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -2355,6 +2380,13 @@ aws4@^1.8.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
   integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
+
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "http://r.tnpm.oa.com/axios/download/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc=
+  dependencies:
+    follow-redirects "1.5.10"
 
 axobject-query@^2.0.2:
   version "2.1.2"
@@ -3727,6 +3759,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "http://r.tnpm.oa.com/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.0.0, debug@^3.1.1, debug@^3.2.5:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
@@ -4791,6 +4830,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "http://r.tnpm.oa.com/follow-redirects/download/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio=
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.10.0"
@@ -9515,6 +9561,11 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-thunk@^1.0.0:
+  version "1.0.0"
+  resolved "http://r.tnpm.oa.com/react-thunk/download/react-thunk-1.0.0.tgz#79813d47f31147e81aee841ed5e76a9e3eabc8b1"
+  integrity sha1-eYE9R/MRR+ga7oQe1edqnj6ryLE=
+
 react@^16.13.1:
   version "16.13.1"
   resolved "http://r.tnpm.oa.com/react/download/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -9643,7 +9694,12 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
-redux@^4.0.5:
+redux-thunk@*, redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "http://r.tnpm.oa.com/redux-thunk/download/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  integrity sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI=
+
+redux@^4.0.0, redux@^4.0.5:
   version "4.0.5"
   resolved "http://r.tnpm.oa.com/redux/download/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha1-TbXeWBbheJHeioDEJCMtBvBR2T8=

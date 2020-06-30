@@ -17,8 +17,8 @@ export default function MyLayout({routes}: any) {
           <div className="logo"/>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <SubMenu key="3" title="切换页面">
-              <Menu.Item key="3"><Link to={'/index/page1'}>Page1</Link></Menu.Item>
-              <Menu.Item key="4"><Link to={'/index/page2'}>Page2</Link></Menu.Item>
+              <Menu.Item key="3"><Link to={'/index/good'}>商品管理</Link></Menu.Item>
+              <Menu.Item key="4"><Link to={'/index/store'}>商店管理</Link></Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>

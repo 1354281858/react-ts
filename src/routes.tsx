@@ -1,42 +1,31 @@
 import React from "react";
-import {HashRouter, Route, Switch} from "react-router-dom"
+import {HashRouter, Redirect, Route, Switch} from "react-router-dom"
 import MyLayout from './views/layout/MyLayout'
-import Page1 from "./views/page1/Page1";
-import Page2 from "./views/page2/Page2";
-import Login from "./views/login/Login";
-import Article from "./views/article/Article";
-
+import GoodManage from "./views/goodManage/GoodManage";
+import {isDef} from "./utils/shared";
+import StoreManage from "./views/storeManage/StoreManage";
 const routes = [
   {
     path: '/index',
     name: 'layout',
     component: MyLayout,
+    redirect: '/index/good',
     children: [
       {
-        path: '/index/page1',
-        name: 'page1',
-        component: Page1
+        path: '/index/good',
+        name: '商品页面',
+        component: GoodManage
       },
       {
-        path: '/index/article:id',
-        name: '文章详情内容',
-        component: Article
-      },
-      {
-        path: '/index/page2',
-        name: 'page2',
-        component: Page2
+        path: '/index/store',
+        name: '商店管理',
+        component: StoreManage
       }
     ]
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: Login
   }
 ]
 
-export function CustomRouter(props: any) {
+export function CustomRouter() {
   return (
     <HashRouter>
       <Switch>
@@ -49,12 +38,17 @@ export function CustomRouter(props: any) {
 }
 
 function RouteWithSubRoutes({route}: any) {
+  let {redirect} = route;
+
   return (
-    <Route
-      path={route.path}
-      render={(props) => {
-        return (<route.component {...props} routes={route.children} />);
-      }}
-    />
+    <>
+      <Route
+        path={route.path}
+        render={(props) => {
+          return (<route.component {...props} routes={route.children} />);
+        }}
+      />
+      {isDef(redirect) && <Redirect to={redirect}/>}
+    </>
   );
 }

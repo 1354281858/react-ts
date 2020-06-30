@@ -1,0 +1,45 @@
+.item-container {
+  &::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+
+  .item-key {
+    display: block;
+    width: 100px;
+  }
+
+  .item-input {
+    width:560px;
+    height:36px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(198,198,198,1);
+    opacity:1;
+    border-radius:4px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-area {
+    width:560px;
+    height:160px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(198,198,198,1);
+    opacity:1;
+    border-radius:4px;
+    margin-left: 20px;
+    resize: none;
+    padding: 5px;
+  }
+}
+.add-good {
+  height: 30px;
+  width: 100%;
+}
